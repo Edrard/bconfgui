@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'disable' => 'Вимк',
+    'enable' => 'Вкл',
+    'name' => 'Ім\'я',
+    'disabled' => 'Вимкнуто',
+    'enabled' => 'Увімкнено',
+
+    'ip' => 'IP',
+    'group' => 'Група',
+    'type' => 'Тип',
+    'model' => 'Модель',
+    'device_configs' => 'Конфігурації пристроїв',
+    'status' => 'Статус',
+    'port' => 'Порт',
+    'login' => 'Логін',
+    'password' => 'Пароль',
+    'connect' => 'З\'єднання',
+    'config_search' => 'Промпт командного рядка',
+    'config_enable' => 'Привілейований режим',
+    'created_at' => 'Створено',
+    'updated_at' => 'Змінено',
+    'd_detail' => 'Деталі пристрою',
+    'description' => 'Опис',
+    'config_enable_command' => 'Команда привілейований режим',
+    'config_enable_pass' => 'Пароль для привілейованого режиму',
+    'config_enable_pass_str' => 'Промт для вводу пароля',
+    'login_hint' => 'Для Mikrotik додайте +cte',
+    'config_enable_pass_str_hint' => 'Строка очикування вводу пароля для переходу у привілейований режим',
+];

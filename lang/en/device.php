@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'disable' => 'Off',
+    'enable' => 'On',
+    'name' => 'Name',
+    'disabled' => 'Disabled',
+    'enabled' => 'Enabled',
+
+    'ip' => 'IP',
+    'group' => 'Group',
+    'type' => 'Type',
+    'model' => 'Model',
+    'device_configs' => 'Device configs',
+    'status' => 'Status',
+    'port' => 'Port',
+    'login' => 'Login',
+    'password' => 'Password',
+    'connect' => 'Connect',
+    'name' => 'Name',
+    'config_search' => 'Command prompt',
+    'config_enable' => 'Config enable',
+    'created_at' => 'Created at',
+    'updated_at' => 'Updated at',
+    'd_detail' => 'Device details',
+    'description' => 'Description',
+    'config_enable_command' => 'Config enable command',
+    'config_enable_pass' => 'Config enable password',
+    'config_enable_pass_str' => 'Config enable сommand prompt',
+    'login_hint' => 'For Mikrotik add +cte',
+    'config_enable_pass_str_hint' => 'Waiting line text for entering password',
+];

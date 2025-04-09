@@ -70,7 +70,7 @@ class InitConfig extends Command
             )
         );
         // Записуємо у файл `.env`
-        EnvHelper::createEnv(base_path('.env.test'),$env);
+        EnvHelper::createEnv(base_path('.env'),$env);
         dd($env);
         $this->info('.env file created successfully!');
 

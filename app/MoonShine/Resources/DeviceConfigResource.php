@@ -236,7 +236,7 @@ class DeviceConfigResource extends ModelResource
     protected function assets(): array
     {
         return [
-            Js::make('/vendor/js/test.js')
+            Js::make('/vendor/js/password.js')
         ];
     }
     protected function specialRules(array $data): array

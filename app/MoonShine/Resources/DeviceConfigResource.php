@@ -145,8 +145,9 @@ class DeviceConfigResource extends ModelResource
             }),
             Select::make('device.status','status')
             ->options([
-                1 => 'Active',
-                0 => 'Passive',
+                2 => __('device.all'),
+                1 => __('device.enabled'),
+                0 => __('device.disabled'),
             ])
             ->multiple(false)
             ->translatable()

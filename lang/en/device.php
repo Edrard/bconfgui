@@ -6,6 +6,7 @@ return [
     'name' => 'Name',
     'disabled' => 'Disabled',
     'enabled' => 'Enabled',
+    'all' => 'All',
 
     'ip' => 'IP',
     'group' => 'Group',

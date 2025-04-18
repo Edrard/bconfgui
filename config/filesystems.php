@@ -37,6 +37,13 @@ return [
             'throw' => false,
             'report' => false,
         ],
+        'bconf' => [
+            'driver' => 'local',
+            'root' => env('BCONF_PATH',storage_path('app/private')),
+            'serve' => true,
+            'throw' => false,
+            'report' => false,
+        ],
 
         'public' => [
             'driver' => 'local',

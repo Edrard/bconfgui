@@ -11,6 +11,7 @@ use App\Models\Config;
 use MoonShine\Laravel\Http\Responses\MoonShineJsonResponse;
 use MoonShine\Laravel\TypeCasts\ModelCaster;
 use MoonShine\UI\Fields\Text;
+use Symfony\Component\HttpFoundation\Response;
 
 class Dashboard extends Page
 {
@@ -40,7 +41,10 @@ class Dashboard extends Page
 
         return MoonShineJsonResponse::make()->toast('Saved');
     }
-
+    protected function modifyResponse(): ?Response
+    {
+        return redirect()->to('/device_configs/device-config-index-page');
+    }
     private function form(): FormBuilder
     {
         return FormBuilder::make()

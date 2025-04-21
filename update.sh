@@ -18,8 +18,9 @@ export COMPOSER_ALLOW_SUPERUSER=0
 
 chmod -R 775 storage bootstrap/cache
 
-npm update --production
-npm run build --omit=dev
+npm ci
+npm run build
+npm ci --omit=dev
 
 php artisan migrate
 

@@ -33,6 +33,9 @@ use App\MoonShine\Resources\ConnectResource;
 use App\MoonShine\Resources\GroupResource;
 use App\MoonShine\Resources\TypeResource;
 use App\MoonShine\Resources\ResModelResource;
+use App\Models\Connect;
+use App\Models\Model;
+use App\Models\Type;
 use Throwable;
 
 
@@ -55,12 +58,18 @@ class DeviceConfigFormPage extends FormPage
                         }),
                         Text::make('device.description', 'description')->translatable(),
                         BelongsTo::make('device.group', 'group', resource: GroupResource::class)
+                        ->valuesQuery(function ($query) {
+                            return $query->orderBy('group', 'asc');
+                        })
                         ->translatable(),
                         BelongsTo::make('device.connect', 'connect', resource: ConnectResource::class)
+                        ->default(Connect::where('connect','ssh')->first())
                         ->translatable(),
                         BelongsTo::make('device.type', 'type', resource: TypeResource::class)
+                        ->default(Type::where('type','router')->first())
                         ->translatable(),
                         BelongsTo::make('device.model', 'model', resource: ResModelResource::class)
+                        ->default(Model::where('model','mikrotikkeys')->first())
                         ->translatable(),
                     ],
                     colSpan: 4,
@@ -86,7 +95,7 @@ class DeviceConfigFormPage extends FormPage
                     [
                         Switcher::make('device.config_enable', 'config_enable')
                         ->translatable()
-                        ->default(1)
+                        ->default(0)
                         ->setValue($this->getResource()->getItem()?->config_enable),
 
                         Text::make('device.config_enable_command', 'config_enable_command')

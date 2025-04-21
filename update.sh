@@ -13,12 +13,11 @@ fi
 
 export COMPOSER_ALLOW_SUPERUSER=1
 composer self-update --2
-yes | composer update --no-dev
+yes | composer update --no-dev --optimize-autoloader
 export COMPOSER_ALLOW_SUPERUSER=0
 
 chmod -R 775 storage bootstrap/cache
 
-composer update --no-dev --optimize-autoloader
 npm update --production
 npm run build --omit=dev
 

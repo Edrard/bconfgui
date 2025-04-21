@@ -29,5 +29,6 @@ return [
     'config_enable_pass' => 'Config enable password',
     'config_enable_pass_str' => 'Config enable сommand prompt',
     'login_hint' => 'For Mikrotik add +cte',
+    'enable_hint' => 'If your device requires a "Enable" mechanism',
     'config_enable_pass_str_hint' => 'Waiting line text for entering password',
 ];

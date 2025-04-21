@@ -96,6 +96,7 @@ class DeviceConfigFormPage extends FormPage
                         Switcher::make('device.config_enable', 'config_enable')
                         ->translatable()
                         ->default(0)
+                        ->hint(__('device.enable_hint'))
                         ->setValue($this->getResource()->getItem()?->config_enable),
 
                         Text::make('device.config_enable_command', 'config_enable_command')

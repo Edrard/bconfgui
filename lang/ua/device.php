@@ -28,5 +28,6 @@ return [
     'config_enable_pass' => 'Пароль для привілейованого режиму',
     'config_enable_pass_str' => 'Промт для вводу пароля',
     'login_hint' => 'Для Mikrotik додайте +cte',
+    'enable_hint' => 'Якщо ваш пристрій потребує "Enable" механізм',
     'config_enable_pass_str_hint' => 'Строка очикування вводу пароля для переходу у привілейований режим',
 ];
